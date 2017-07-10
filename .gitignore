@@ -22,3 +22,11 @@ docs/
 
 # Code coverage
 *.lst
+
+#dist file
+dist.zip
+
+#swap file
+*.swp
+
+main
