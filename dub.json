@@ -1,0 +1,9 @@
+{
+	"name": "light_riders_d",
+	"authors": [
+		"Don Pollitz"
+	],
+	"description": "Light Rider app for riddles.io",
+	"copyright": "Copyright © 2017, Don Pollitz",
+	"license": "proprietary"
+}

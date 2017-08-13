@@ -1,15 +1,15 @@
-import std.stdio;
-import std.random;
 import std.algorithm;
 import std.array;
+import std.random;
+import std.stdio;
 
 void main() {
 	string line;
 	while ((line = readln()) !is null)
 	{
 		auto words = split(line);
-		auto command = words[0];
-		auto parameters = words[1..$];
+		auto const command = words[0];
+		auto const parameters = words[1..$];
 		switch (command)
 		{
 			case "action":
