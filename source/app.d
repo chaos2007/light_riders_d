@@ -1,10 +1,13 @@
-import std.algorithm;
-import std.array;
-import std.random;
-import std.stdio;
+import BoardState;
+import Settings;
+import std.array : split;
+import std.random : choice;
+import std.stdio : readln, stdout, write;
 
 void main() {
 	string line;
+	Settings settings;
+	BoardState state;
 	while ((line = readln()) !is null)
 	{
 		auto words = split(line);
@@ -17,8 +20,14 @@ void main() {
 				auto chosen = choice(array);
 				write(chosen);
 				break;
+			case "settings":
+				settings.parse_settings(parameters);
+				break;
+			case "update":
+				break;
 			default:
-				assert(0);
+				write("WRONG CHOICE.\r\n");
+				break;
 		}
 		stdout.flush();
 	}

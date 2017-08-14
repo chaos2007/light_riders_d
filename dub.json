@@ -5,5 +5,8 @@
 	],
 	"description": "Light Rider app for riddles.io",
 	"copyright": "Copyright © 2017, Don Pollitz",
-	"license": "proprietary"
+	"license": "proprietary",
+	"dependencies": {
+		"dunit": "~>1.0.14"
+	}
 }
