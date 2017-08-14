@@ -21,7 +21,7 @@ void main() {
 				write(chosen);
 				break;
 			case "settings":
-				settings.parse_settings(parameters);
+				settings.parse_settings(parameters.dup());
 				break;
 			case "update":
 				break;

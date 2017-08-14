@@ -11,7 +11,7 @@ class Settings {
     int field_width;
     int field_height;   
 
-    void parse_settings( const string[] words) {
+    void parse_settings( string[] words) {
         auto setting = words[0];
         auto arguments = words[1..$];
         switch(setting) {
