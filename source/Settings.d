@@ -48,7 +48,7 @@ unittest {
     auto setting = new Settings();
 
     setting.parse_settings(["timebank", "10000"]);
-    setting.timebank.assertEqual(10_000,format("Expected: 1000 Actual: %d", setting.timebank));
+    setting.timebank.assertEqual(1_000);
 
     setting.parse_settings(["time_per_move", "500"]);
     setting.time_per_round.assertEqual(500,format("Expected: 500 Actual: %d", setting.time_per_round));
